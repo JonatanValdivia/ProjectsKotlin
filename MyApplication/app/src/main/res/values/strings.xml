@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="str_peso">Peso</string>
+    <string name="hint_peso">Peso</string>
+    <string name="str_altura">Altura</string>
+    <string name="hint_altura">Altura</string>
+    <string name="calcular">calcular</string>
+</resources>

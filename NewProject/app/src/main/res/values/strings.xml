@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NewProject</string>
+    <string name="titulo">Calculadora Saudável</string>
+    <string name="subTitulo">O que deseja fazer hoje?</string>
+</resources>

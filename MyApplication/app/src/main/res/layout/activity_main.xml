@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+
+    >
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/str_peso"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/editPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:inputType="numberDecimal"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:hint="@string/hint_peso"
+        />
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_altura"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/editAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:hint="@string/hint_altura"
+
+        />
+
+    <Button
+        android:id="@+id/button_calcular"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="@string/calcular"
+        android:layout_marginTop="48dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginTop="48dp"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>
