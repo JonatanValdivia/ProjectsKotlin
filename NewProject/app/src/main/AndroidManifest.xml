@@ -9,7 +9,10 @@
         android:roundIcon="@drawable/peso_do_aluno"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ImcActivity2"></activity>
+        <activity android:name=".Activity_resultado_ncd"></activity>
+        <activity android:name=".NcdActivity" />
+        <activity android:name=".Activity_resultado_imc" />
+        <activity android:name=".ImcActivity2" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

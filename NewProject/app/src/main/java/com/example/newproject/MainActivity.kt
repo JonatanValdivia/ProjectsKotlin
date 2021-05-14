@@ -18,5 +18,11 @@ class MainActivity : AppCompatActivity() {
             val abrirImcActivity = Intent(this, ImcActivity2::class.java)
             startActivity(abrirImcActivity)
         }
+
+        var cardNdc = findViewById<CardView>(R.id.card_ndc)
+        cardNdc.setOnClickListener {
+            val abrirNcdActivity = Intent(this, NcdActivity::class.java);
+            startActivity(abrirNcdActivity)
+        }
     }
 }
