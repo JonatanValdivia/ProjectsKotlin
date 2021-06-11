@@ -62,6 +62,7 @@
                         android:textColor="@color/colorWhite"/>
 
                     <TextView
+                        android:id="@+id/status_calorias_ncd"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="24sp"

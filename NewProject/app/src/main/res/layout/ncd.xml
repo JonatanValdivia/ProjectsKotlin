@@ -25,35 +25,57 @@
             android:layout_height="wrap_content"
             android:text="NCD"
             android:textAppearance="@style/titulo"
-            android:textSize="40dp"/>
+            android:textSize="30dp"/>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="600dp"
-            android:layout_marginBottom="-48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-20dp"
             app:cardBackgroundColor="@color/colorPrimary"
-            app:cardCornerRadius="48dp">
+            app:cardCornerRadius="20dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="32dp"
+                android:layout_margin="16dp"
                 android:orientation="vertical">
 
                 <TextView
                     style="@style/label_form"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Idade:"
+                    android:text="Peso:"
                     android:layout_marginBottom="8dp"/>
 
                 <EditText
-                    android:id="@+id/resultado_ncd_idade"
+                    android:id="@+id/peso_ncd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Digite a sua idade"
-                    android:background="@drawable/edit_round_background"
+                    android:hint="Digite o seu peso"
+                    android:background="@color/colorWhite"
                     android:padding="16sp"
-                    android:layout_marginBottom="16dp"/>
+                    android:layout_marginBottom="15dp"
+                    android:inputType="numberDecimal"
+                    />
+
+                <TextView
+                    style="@style/label_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Faixa etária:"
+                    android:layout_marginBottom="8dp"/>
+
+                <Spinner
+                    android:id="@+id/idade_ncd"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Digite a sua idade"
+                    android:background="@color/colorWhite"
+                    android:padding="16sp"
+                    android:layout_marginBottom="15dp"
+                    android:entries="@array/idades"/>
+
+
 
                 <TextView
                     android:layout_width="match_parent"
@@ -62,12 +84,14 @@
                     style="@style/label_form"/>
 
                 <RadioGroup
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:id="@+id/radioGroup_sexo_ncd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
                     <RadioButton
                         android:id="@+id/radioSexMas"
                         android:textColor="@color/colorWhite"
-                        android:textSize="25sp"
+                        android:textSize="22sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -76,14 +100,33 @@
                     <RadioButton
                         android:id="@+id/radioSexFem"
                         android:textColor="@color/colorWhite"
-                        android:textSize="25sp"
+                        android:textSize="22sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="16dp"
-                        android:text="Feminino"/>
+                        android:text="Feminino"
+                        android:layout_marginLeft="40dp"/>
                 </RadioGroup>
-
                 <TextView
+                    style="@style/label_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nível de atividade física"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginBottom="8dp"/>
+
+                <Spinner
+                    android:id="@+id/spiner_atividade_ncd"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:entries="@array/atividades"
+                    style="@style/label_form"
+                    android:background="@color/colorWhite"
+                    android:layout_marginBottom="15dp">
+
+                </Spinner>
+
+               <!-- <TextView
                     style="@style/label_form"
                     android:layout_marginBottom="8dp"
                     android:layout_width="match_parent"
@@ -115,7 +158,7 @@
                     android:text="Atividade intensa"
                     android:layout_marginBottom="20dp"
                    />
-
+        -->
                 <Button
                     android:id="@+id/calcular_resultado_ncd"
                     android:layout_width="match_parent"

@@ -1,6 +1,7 @@
 package com.example.newproject
 
 fun calcularImc(peso: Double, altura: Double) = peso / (altura*altura)
+
 fun obterStatus(imc : Double) : List<String>{
     var resultados = emptyList<String>()
     if(imc < 18.5){

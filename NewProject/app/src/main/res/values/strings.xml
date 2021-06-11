@@ -2,4 +2,17 @@
     <string name="app_name">NewProject</string>
     <string name="titulo">Calculadora Saudável</string>
     <string name="subTitulo">O que deseja fazer hoje?</string>
+
+    <string-array name="atividades">
+        <item>Selecione uma opção</item>
+        <item>Leve</item>
+        <item>Moderada</item>
+        <item>Intensa</item>
+    </string-array>
+    <string-array name="idades">
+        <item>Selecione uma opção</item>
+        <item>18 a 30 anos</item>
+        <item>30 a 60 anos</item>
+        <item>Maior que 60 anos</item>
+    </string-array>
 </resources>

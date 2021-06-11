@@ -11,6 +11,8 @@ class Activity_resultado_ncd : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resultado_ncd)
 
-        val ncdIdade : TextView = findViewById(R.id.resultado_ncd_idade)
+        val ncd = intent.getDoubleExtra("ncd", 0.0)
+        val textViewResultadoNcd = findViewById<TextView>(R.id.resultado_calorias)
+        textViewResultadoNcd.text = String.format("%.0f", ncd)
     }
 }
