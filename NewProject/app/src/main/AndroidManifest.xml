@@ -9,6 +9,7 @@
         android:roundIcon="@drawable/peso_do_aluno"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".DashBoardActivity"></activity>
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +21,7 @@
         <activity android:name=".NcdActivity" />
         <activity android:name=".Activity_resultado_imc" />
         <activity android:name=".ImcActivity2" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

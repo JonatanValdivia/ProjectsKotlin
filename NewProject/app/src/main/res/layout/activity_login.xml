@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,146 +8,178 @@
 
     <!-- Precisamos de um gerenciador de layout, então: -->
 
-        <RelativeLayout
-            android:id="@+id/header"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:background="@color/colorAccent"
-            >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-smallcaps"
-                android:gravity="end"
-                android:text="Health\nCalc"
-                android:textColor="@color/colorWhite"
-                android:textSize="48sp" />
-
-                <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:src="@drawable/kcal"
-                    android:layout_alignParentEnd="true"
-                    />
-
-
-        </RelativeLayout>
-
-        <View
-            android:id="@+id/view1"
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
-            android:background="@drawable/ic_wave1"
-            android:layout_below="@+id/header"
-            />
-
-        <RelativeLayout
-            android:id="@+id/login"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#d4f9fa"
-            android:layout_below="@+id/view1"
-            android:layout_above="@+id/view2"
-            android:paddingTop="32dp"
-            android:paddingEnd="32dp"
-            android:paddingStart="32dp">
-
-            <EditText
-                android:id="@+id/edit_text_user"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:hint="E-mail"
-                android:inputType="textEmailAddress"
-                android:layout_alignParentTop="true"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/edit_round"
-                android:drawableStart="@drawable/ic_baseline_email_24"
-                android:drawableTint="@color/colorAccent"
-                android:drawablePadding="8dp"
-                />
-
-            <EditText
-                android:id="@+id/senha"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:hint="Senha"
-                android:inputType="textPassword"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@id/edit_text_user"
-                android:background="@drawable/edit_round"
-                android:layout_marginBottom="16dp"
-                android:drawableStart="@drawable/ic_baseline_lock_24"
-                android:drawableTint="@color/colorAccent"
-                android:drawablePadding="8dp"
-                />
-
-            <Button
-                android:id="@+id/button_login"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="Entrar"
-                android:background="@drawable/button_shape"
-                android:layout_below="@id/senha"
-                android:textColor="@color/colorWhite"
-                android:backgroundTint="@color/colorAccent"
-
-                />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@id/button_login"
-                android:paddingTop="16dp">
-
-                <CheckBox
-                    android:id="@+id/check_lembrar"
-                    android:textSize="10sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Lembrar"
-                    android:layout_marginBottom="8dp"
-                    android:layout_alignParentEnd="true"/>
-
-                <TextView
-                    android:id="@+id/esqueceu_senha"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Esqueceu a senha?"
-                    android:layout_below="@id/check_lembrar"
-                    android:layout_alignParentEnd="true"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Novo por aqui?"
-                    android:layout_below="@id/esqueceu_senha"
-                    android:layout_alignParentEnd="true"/>
-
-            </RelativeLayout>
-
-        </RelativeLayout>
-
-
-
-        <View
-            android:id="@+id/view2"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:background="@drawable/ic_wave"
-            android:layout_alignParentBottom="true"
-            />
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="16dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Desenvolvido por DS2M-B"
-            android:layout_alignParentBottom="true"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="end"
+            android:text="Health\nCalc"
+            android:textColor="@color/colorWhite"
+            android:textSize="48sp" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/kcal" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/header"
+        android:background="@drawable/ic_wave1" />
+
+    <RelativeLayout
+        android:id="@+id/relative_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/text_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faça login para continuar"
+            android:layout_below="@+id/text_login"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view2"
+        android:layout_below="@+id/relative_login"
+        android:background="#d4f9fa"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <EditText
+            android:id="@+id/edit_text_user"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_round"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorAccent"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/senha"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/edit_text_user"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="8dp"
-            android:textStyle="bold"
-            android:textColor="@color/colorWhite"/>
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_round"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorAccent"
+            android:hint="Senha"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/senha"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Entrar"
+            android:textColor="@color/colorWhite"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/button_login"
+            android:paddingTop="10dp">
+
+            <CheckBox
+                android:id="@+id/check_lembrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="8dp"
+                android:text="Lembrar"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/esqueceu_senha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/check_lembrar"
+                android:layout_alignParentEnd="true"
+                android:text="Esqueci a senha" />
+
+            <RelativeLayout
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/esqueceu_senha"
+                android:layout_alignParentEnd="true"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Criar uma conta agora"
+                    android:textColor="#16DAC7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Não tem conta?" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_wave" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:text="Desenvolvido por DS2M-B"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>
