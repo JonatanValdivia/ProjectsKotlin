@@ -1,10 +1,11 @@
-package com.example.newproject
+package com.example.newproject.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import com.example.newproject.R
 
 class ImcActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +14,8 @@ class ImcActivity2 : AppCompatActivity() {
         //Val é constante, não muda. Geralmente usado para objetos
         val buttonCalcular: Button = findViewById(R.id.button_calcular_imc)
         val editTextPeso: EditText =  findViewById(R.id.edit_text_peso)
-        val editTextAltura: EditText = findViewById(R.id.edit_text_altura
+        val editTextAltura: EditText = findViewById(
+            R.id.edit_text_altura
         )
 
         buttonCalcular.setOnClickListener{

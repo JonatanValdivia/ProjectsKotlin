@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ImcActivity2"
+    tools:context=".ui.ImcActivity2"
     android:fillViewport="true">
 
     <LinearLayout
@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:gravity="bottom|center_horizontal"
         android:orientation="vertical"
-        tools:context=".ImcActivity2">
+        tools:context=".ui.ImcActivity2">
 
         <ImageView
             android:layout_width="wrap_content"

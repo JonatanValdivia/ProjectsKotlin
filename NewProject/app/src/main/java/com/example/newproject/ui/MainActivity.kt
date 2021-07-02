@@ -1,10 +1,10 @@
-package com.example.newproject
+package com.example.newproject.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.cardview.widget.CardView
+import com.example.newproject.R
 
 
 class MainActivity : AppCompatActivity() {

@@ -1,10 +1,9 @@
-package com.example.newproject
+package com.example.newproject.ui
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.TextView
+import com.example.newproject.R
 
 class Activity_resultado_ncd : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

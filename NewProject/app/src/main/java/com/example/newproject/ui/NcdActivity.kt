@@ -1,11 +1,10 @@
-package com.example.newproject
+package com.example.newproject.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
-import androidx.cardview.widget.CardView
-import kotlinx.android.synthetic.main.ncd.*
+import com.example.newproject.R
 
 class NcdActivity : AppCompatActivity() {
     lateinit var editTextPeso : EditText
@@ -19,7 +18,7 @@ class NcdActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.ncd)
-        editTextPeso = findViewById(com.example.newproject.R.id.peso_ncd)
+        editTextPeso = findViewById(R.id.peso_ncd)
         spinnnerFaixaEtaria = findViewById(R.id.idade_ncd)
         spinnerNivelAtividade = findViewById(R.id.spiner_atividade_ncd)
         radioFeminino = findViewById(R.id.radioSexFem)
@@ -46,7 +45,12 @@ class NcdActivity : AppCompatActivity() {
             Toast.makeText(this, "Selecione o sexo!", Toast.LENGTH_SHORT).show()
         }
 
-        val ncd = com.example.newproject.calcularNcd(peso, faixaEtaria, nivelAtividade, sexo);
+        val ncd = com.example.newproject.calcularNcd(
+            peso,
+            faixaEtaria,
+            nivelAtividade,
+            sexo
+        );
         val intent = Intent(this, Activity_resultado_ncd::class.java)
         intent.putExtra("ncd", ncd)
         startActivity(intent)

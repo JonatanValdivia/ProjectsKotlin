@@ -1,10 +1,12 @@
-package com.example.newproject
+package com.example.newproject.ui
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.TextView
+import com.example.newproject.R
+import com.example.newproject.calcularImc
+import com.example.newproject.getDica
+import com.example.newproject.obterStatus
 import kotlinx.android.synthetic.main.activity_resultado_imc.*
 
 class Activity_resultado_imc : AppCompatActivity() {

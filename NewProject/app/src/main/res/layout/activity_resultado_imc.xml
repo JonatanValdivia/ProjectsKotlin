@@ -9,7 +9,7 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_resultado_imc"
+    tools:context=".ui.Activity_resultado_imc"
     android:orientation="vertical"
     android:background="@color/colorPrimary">
 
